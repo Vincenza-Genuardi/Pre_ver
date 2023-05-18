@@ -1,0 +1,15 @@
+<h3>Ecommerce - magliette</h3>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>TIPOLOGIA</th>
+        <th>PREZZO</th>
+    </tr>
+    <tr *ngFor="let el of magliette">
+        <td>{{ el.id }}</td>
+        <td><b>{{ el.nome }}</b></td>
+        <td>{{ el.tipologia }}</td>
+        <td><i>$ {{ el.prezzo }}</i></td>
+    </tr>
+</table>

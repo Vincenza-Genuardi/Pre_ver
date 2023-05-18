@@ -1,0 +1,13 @@
+<h3>Ecommerce - scarpe</h3>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>PREZZO</th>
+    </tr>
+    <tr *ngFor="let el of scarpe">
+        <td>{{ el.id }}</td>
+        <td><b>{{ el.nome }}</b></td>
+        <td><i>$ {{ el.prezzo }}</i></td>
+    </tr>
+</table>

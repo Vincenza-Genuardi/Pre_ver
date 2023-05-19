@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Scarpa } from '../models/scarpa.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-scarpa-componente',
@@ -7,5 +8,8 @@ import { Scarpa } from '../models/scarpa.model';
   styleUrls: ['./scarpa-componente.component.css']
 })
 export class ScarpaComponenteComponent {
-@Input() scarpe !: Scarpa[] 
+  scarpe !: Scarpa[] 
+  constructor(private router:Router) {
+    this.scarpe = this.router.getCurrentNavigation().extras.state as Scarpa[];
+  }
 }

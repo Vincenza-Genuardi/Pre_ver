@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { ScarpaComponenteComponent } from './scarpa-componente/scarpa-componente.component';
 import { MagliettaComponenteComponent } from './maglietta-componente/maglietta-componente.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ScarpaComponenteComponent,
-    MagliettaComponenteComponent
+    MagliettaComponenteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

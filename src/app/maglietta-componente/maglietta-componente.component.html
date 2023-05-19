@@ -1,15 +1,21 @@
-<h3>Ecommerce - magliette</h3>
-<table>
-    <tr>
-        <th>ID</th>
-        <th>NOME</th>
-        <th>TIPOLOGIA</th>
-        <th>PREZZO</th>
-    </tr>
-    <tr *ngFor="let el of magliette">
-        <td>{{ el.id }}</td>
-        <td><b>{{ el.nome }}</b></td>
-        <td>{{ el.tipologia }}</td>
-        <td><i>$ {{ el.prezzo }}</i></td>
-    </tr>
+<br>
+<h4>Magliette</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Tipologia</th>
+            <th class="text-end">Prezzo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let m of magliette">
+            <td>{{ m.id }}</td>
+            <td>{{ m.nome }}</td>
+            <td>{{ m.tipologia }}</td>
+            <td class="text-end"><i>€ {{ m.prezzo }}</i></td>
+        </tr>
+    </tbody>
 </table>

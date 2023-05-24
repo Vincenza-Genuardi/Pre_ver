@@ -1,0 +1,14 @@
+.color{
+    background-color: lightgray;
+    border: 4cap;
+    border-color: black;
+}
+.color:active{
+    background-color: rgb(186, 186, 234);
+}
+.color:hover{
+    background-color: rgb(186, 186, 234);
+}
+li{
+    cursor: pointer;
+}

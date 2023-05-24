@@ -1,10 +1,10 @@
-<div class="container">
-    <div class="navbar navbar-expand-lg navbar-light bg-light">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item nav-link" routerLink="/magliette" [state]="data.magliette" routerLinkActive="active-menu">Magliette ({{data.magliette.length}})</li>
-        <li class="nav-item nav-link" routerLink="/scarpe" [state]="data.scarpe" routerLinkActive="active-menu">Scarpe ({{data.scarpe.length}})</li>
-        </ul>
+<div class="container row">
+    <div class="btn-group-vertical col-3" role="group" aria-label="Basic example">
+        <button type="button" class="btn color " routerLink="/magliette" [state]="data.magliette" routerLinkActive="active-menu">MAGLIETTE</button>
+        <button type="button" class="btn color" routerLink="/scarpe" [state]="data.scarpe" routerLinkActive="active-menu">SCARPE</button>
     </div>
-    <router-outlet></router-outlet>
-    <footer class="bg-light text-center">ECommerce - 2023</footer>
+    <div class="col-9"> 
+        <router-outlet></router-outlet>
+        <footer class="bg-light text-center">ECommerce - 2023</footer>
+    <div>
 </div>

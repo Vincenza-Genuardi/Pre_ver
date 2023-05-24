@@ -12,8 +12,10 @@ export class AppComponent {
   oECommerce !: Observable<ECommerce>
   data !: ECommerce
   link : string = 'https://my-json-server.typicode.com/paolocarugati/PC_ecommerce/db'
+ 
   constructor(public http: HttpClient) {
     this.makeTypedRequest()
+  
   }
   
    makeTypedRequest() : void
@@ -21,4 +23,6 @@ export class AppComponent {
     this.oECommerce = this.http.get<ECommerce>(this.link);
     this.oECommerce.subscribe( d => {this.data = d;});
   }   
+
+  
 }
